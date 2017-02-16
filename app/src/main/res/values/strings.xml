@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">BetrayalStatTracker</string>
+    <string name="might">Might</string>
+    <string name="speed">Speed</string>
+    <string name="sanity">Sanity</string>
+    <string name="knowledge">Knowledge</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="birthday">Birthday: %s</string>
+    <string name="dead">X</string>
+
+    <string-array name="characters_array">
+        <item>Brandon Jaspers</item>
+        <item>Darrin \"Flash\" Williams</item>
+        <item>Father Rhinehardt</item>
+        <item>Heather Granville</item>
+        <item>Jenny LeClerc</item>
+        <item>Madame Zostra</item>
+        <item>Missy Dubourde</item>
+        <item>Ox Bellows</item>
+        <item>Peter Akimoto</item>
+        <item>Professor Longfellow</item>
+        <item>Vivian Lopez</item>
+        <item>Zoe Ingstrom</item>
+    </string-array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/main_layout_padding"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/characters"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/spinner_height"/>
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/birthday"
+        tools:text="Birthday: January 1st"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/divider_margin"
+        android:layout_marginBottom="@dimen/divider_margin"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/might"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/might"
+        android:textSize="@dimen/stat_description_text_size"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatPickerLayout
+        android:id="@+id/mightPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/stat_picker_layout_padding_bottom"/>
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/speed"
+        android:textSize="@dimen/stat_description_text_size"/>
+
+
+    <com.calvinlsliang.betrayalstattracker.view.StatPickerLayout
+        android:id="@+id/speedPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/stat_picker_layout_padding_bottom"/>
+
+    <TextView
+        android:id="@+id/sanity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sanity"
+        android:textSize="@dimen/stat_description_text_size"/>
+
+
+    <com.calvinlsliang.betrayalstattracker.view.StatPickerLayout
+        android:id="@+id/sanityPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/stat_picker_layout_padding_bottom"/>
+
+    <TextView
+        android:id="@+id/knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/knowledge"
+        android:textSize="@dimen/stat_description_text_size"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatPickerLayout
+        android:id="@+id/knowledgePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

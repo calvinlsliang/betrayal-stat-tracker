@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="stat_text_size">24sp</dimen>
+    <dimen name="stat_padding">2dp</dimen>
+    <dimen name="stat_description_text_size">30sp</dimen>
+    <dimen name="birthday">20sp</dimen>
+    <dimen name="spinner_height">60dp</dimen>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="button_negative_margin_top">-12dp</dimen>
+    <dimen name="button_text_size">24sp</dimen>
+    <dimen name="divider_margin">12dp</dimen>
+    <dimen name="main_layout_padding">12dp</dimen>
+    <dimen name="spinner_text_view_text_size">20sp</dimen>
+    <dimen name="spinner_text_view_padding">8dp</dimen>
+    <dimen name="stat_picker_layout_padding_bottom">24dp</dimen>
+</resources>

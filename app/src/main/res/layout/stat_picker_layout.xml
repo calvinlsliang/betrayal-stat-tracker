@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/button_negative_margin_top"
+        android:textSize="@dimen/button_text_size"
+        android:text="@string/minus"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/dead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dead"
+        tools:text="X"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="2"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="3"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="4"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="5"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="6"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="7"/>
+
+    <com.calvinlsliang.betrayalstattracker.view.StatTextView
+        android:id="@+id/health8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="8"/>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:layout_marginTop="@dimen/button_negative_margin_top"
+        android:textSize="@dimen/button_text_size"
+        android:text="@string/plus"/>
+
+</LinearLayout>
