@@ -22,6 +22,16 @@ public class StatTextView extends TextView {
         init();
     }
 
+    public void disableStartingStat() {
+        setTextColor(getResources().getColor(R.color.gray));
+        setEnabled(false);
+    }
+
+    public void enableStartingStat() {
+        setTextColor(getResources().getColor(R.color.state_selected_color));
+        setEnabled(true);
+    }
+
     private void init() {
         setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT));
         setTextSize(getResources().getDimension(R.dimen.stat_text_size));
@@ -29,6 +39,7 @@ public class StatTextView extends TextView {
         final int padding = (int) getResources().getDimension(R.dimen.stat_padding);
         setPadding(padding, padding, padding, padding);
         setBackground(getResources().getDrawable(R.drawable.state_selected_stat));
+        setTextColor(getResources().getColor(R.color.gray));
         setEnabled(false);
     }
 }

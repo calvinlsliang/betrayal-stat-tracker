@@ -12,9 +12,9 @@ import com.calvinlsliang.betrayalstattracker.R;
 public class StatPickerLayout extends LinearLayout {
 
     final static int STATS_LENGTH = 8;
+    private static final int OFFSET = 1;
 
     private int currentPosition;
-
     private Button minus;
     private Button plus;
     private StatTextView dead;
@@ -55,7 +55,6 @@ public class StatPickerLayout extends LinearLayout {
         health8 = (StatTextView) view.findViewById(R.id.health8);
 
         initButtonListeners();
-
     }
 
     public void updateStats(String[] stats, int startingPosition) {
@@ -80,45 +79,48 @@ public class StatPickerLayout extends LinearLayout {
     }
 
     private void updateEnabled(int startingPosition) {
-        currentPosition = startingPosition;
+        currentPosition = startingPosition + OFFSET;
 
-        dead.setEnabled(false);
-        health1.setEnabled(false);
-        health2.setEnabled(false);
-        health3.setEnabled(false);
-        health4.setEnabled(false);
-        health5.setEnabled(false);
-        health6.setEnabled(false);
-        health7.setEnabled(false);
-        health8.setEnabled(false);
+        disableHealth();
 
         switch(startingPosition) {
             case 0:
-                health1.setEnabled(true);
+                health1.enableStartingStat();
                 break;
             case 1:
-                health2.setEnabled(true);
+                health2.enableStartingStat();
                 break;
             case 2:
-                health3.setEnabled(true);
+                health3.enableStartingStat();
                 break;
             case 3:
-                health4.setEnabled(true);
+                health4.enableStartingStat();
                 break;
             case 4:
-                health5.setEnabled(true);
+                health5.enableStartingStat();
                 break;
             case 5:
-                health6.setEnabled(true);
+                health6.enableStartingStat();
                 break;
             case 6:
-                health7.setEnabled(true);
+                health7.enableStartingStat();
                 break;
             case 7:
-                health8.setEnabled(true);
+                health8.enableStartingStat();
                 break;
-
         }
+    }
+
+    private void disableHealth() {
+        dead.setEnabled(false);
+        health1.disableStartingStat();
+        health2.disableStartingStat();
+        health3.disableStartingStat();
+        health4.disableStartingStat();
+        health5.disableStartingStat();
+        health6.disableStartingStat();
+        health7.disableStartingStat();
+        health8.disableStartingStat();
     }
 
     private void initButtonListeners() {
@@ -126,13 +128,8 @@ public class StatPickerLayout extends LinearLayout {
             @Override
             public void onClick(View v) {
                 int newPosition = Math.max(currentPosition - 1, 0);
-                if (newPosition == currentPosition) {
-                    return;
-                }
-
                 getStatTextView(currentPosition).setEnabled(false);
                 getStatTextView(newPosition).setEnabled(true);
-
                 currentPosition = newPosition;
             }
         });
@@ -141,13 +138,8 @@ public class StatPickerLayout extends LinearLayout {
             @Override
             public void onClick(View v) {
                 int newPosition = Math.min(currentPosition + 1, STATS_LENGTH);
-                if (newPosition == currentPosition) {
-                    return;
-                }
-
                 getStatTextView(currentPosition).setEnabled(false);
                 getStatTextView(newPosition).setEnabled(true);
-
                 currentPosition = newPosition;
             }
         });
@@ -175,7 +167,6 @@ public class StatPickerLayout extends LinearLayout {
                 return health8;
             default:
                 return dead;
-
         }
     }
 }
