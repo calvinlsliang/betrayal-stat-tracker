@@ -8,8 +8,8 @@
 
     <Button
         android:id="@+id/minus"
-        android:layout_width="@dimen/button_size"
-        android:layout_height="@dimen/button_size"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
         android:layout_marginTop="@dimen/button_negative_margin_top"
         android:textSize="@dimen/button_text_size"
         android:text="@string/minus"/>
@@ -71,8 +71,8 @@
 
     <Button
         android:id="@+id/plus"
-        android:layout_width="@dimen/button_size"
-        android:layout_height="@dimen/button_size"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
         android:layout_marginTop="@dimen/button_negative_margin_top"
         android:textSize="@dimen/button_text_size"
         android:text="@string/plus"/>
